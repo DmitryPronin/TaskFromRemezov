@@ -3,7 +3,7 @@ package factorial;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("ВВедите число для рассчета факториала");
@@ -19,7 +19,7 @@ public class main {
                 System.out.println("Факториал числа " + digitForFactorial + " = " + result);
             }
         } catch (InputMismatchException e) {
-            System.out.println("Вы ввели не число");
+            System.out.println("Вы ввели не число ");
         }
     }
 }
