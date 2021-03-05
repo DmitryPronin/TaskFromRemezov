@@ -1,5 +1,6 @@
 package factorial;
 
+import java.math.BigInteger;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -12,9 +13,9 @@ public class Main {
             if (digitForFactorial < 0) {
                 System.out.println("Факториал числа " + digitForFactorial + " = бесконечность");
             } else {
-                long result = 1;
+                BigInteger result = new BigInteger("1");
                 for (int i = digitForFactorial; i > 0; i--) {
-                    result = result * i;
+                    result = result.multiply(new BigInteger(String.valueOf(i)));
                 }
                 System.out.println("Факториал числа " + digitForFactorial + " = " + result);
             }
